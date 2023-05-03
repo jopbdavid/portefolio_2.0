@@ -22,10 +22,15 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <h1>
+          <div className="icon">
+            <img src="jd.png" alt="icon" />
+          </div>
+          <h1 className="nav-name">
             <Link to="/">
-              <span className="first-l">J</span>OÃO
-              <span className="first-l">D</span>AVID
+              <a>
+                <span className="first-l">J</span>OÃO
+                <span className="first-l">D</span>AVID
+              </a>
             </Link>
           </h1>
 
@@ -41,7 +46,9 @@ const Navbar = () => {
                 const { id, url, text } = link;
                 return (
                   <li key={id}>
-                    <Link to={url}>{text}</Link>
+                    <Link to={url}>
+                      <a className="nav-links">{text}</a>
+                    </Link>
                   </li>
                 );
               })}

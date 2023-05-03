@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./img/IMG_2769.JPG";
+import logo from "./img/DSC_0409.jpg";
 import { links, social, skills } from "./data";
 import { Link } from "react-router-dom";
 import hand from "./img/Emoji_u1f44b.svg";
@@ -14,8 +14,7 @@ const Main = () => {
         <div className="underline"></div>
       </div>
       <div className="skills-center">
-        {/* {btn container} */}
-        <div className="skills-btn-container"></div>
+        {/* <div className="skills-btn-container"></div> */}
         <div className="intro">
           <h2>
             Hey! I'm João.

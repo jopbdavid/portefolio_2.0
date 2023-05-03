@@ -254,10 +254,7 @@ LOGO
   margin-left: 35%;
 }
 .title-logo {
-  margin-bottom: 1rem;
-  margin-left: 5rem;
-  margin-right: auto;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .first-l {
@@ -292,7 +289,7 @@ MAIN
 
 .section {
   width: 90vw;
-  margin: 5rem auto;
+  margin: 2rem auto;
   max-width: var(--max-width);
 }
 
@@ -332,7 +329,7 @@ MAIN
   font-style: italic;
   width: 60%;
 
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 .waving-hand img {
   width: 40px;
@@ -341,7 +338,7 @@ MAIN
 
 .skills-center {
   width: 80vw;
-  margin: 0 auto;
+  margin-top: 2rem;
   max-width: var(--max-width);
 }
 .skills-btn-container {
@@ -703,6 +700,17 @@ Projects
   }
 }
 
+.project-section h2 {
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--clr-primary-3);
+}
+.project-section p {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
 .project {
   /* padding: 2rem 0 4rem; */
   border-radius: var(--radius);
@@ -713,8 +721,10 @@ Projects
 .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
   gap: 10px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .project-img {

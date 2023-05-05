@@ -7,12 +7,15 @@ import {
   FaLinkedin,
   FaTwitter,
   FaReact,
+  FaInstagram,
+  FaGithub,
 } from "react-icons/fa";
 import { SiJavascript, SiTypescript } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 import cookie from "./img/cookie_project.jpg";
 import meet from "./img/MeetCreator.jpg";
 import school from "./img/class_management.jpg";
+import unsplash from "./img/unsplash.jpg";
 
 export const links = [
   {
@@ -35,18 +38,23 @@ export const links = [
 export const social = [
   {
     id: 1,
-    url: "https://www.twitter.com",
-    icon: <FaFacebook size={30} />,
+    url: "https://www.instagram.com/joaopdavid/",
+    icon: <FaInstagram size={30} />,
   },
   {
     id: 2,
-    url: "https://www.twitter.com",
+    url: "https://twitter.com/JooPedr39494131",
     icon: <FaTwitter size={30} />,
   },
   {
     id: 3,
-    url: "https://www.twitter.com",
+    url: "https://www.linkedin.com/in/jo%C3%A3o-david-888391144/",
     icon: <FaLinkedin size={30} />,
+  },
+  {
+    id: 4,
+    url: "https://github.com/jopbdavid",
+    icon: <FaGithub size={30} />,
   },
 ];
 
@@ -130,5 +138,13 @@ export const projects = [
       "My attempt to save a dear family member from the excruciating pain of managing those little devils at school",
     img: school,
     url: "http://class-management-jp.netlify.app",
+  },
+  {
+    id: 4,
+    name: "Unsplash search",
+    description:
+      "Simple Unsplash API app to search for images of delicacies and whet my appetite. Credits to: John Smilga :)  ",
+    img: unsplash,
+    url: "https://unsplash-img-search.netlify.app/",
   },
 ];

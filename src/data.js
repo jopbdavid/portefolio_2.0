@@ -16,6 +16,7 @@ import cookie from "./img/cookie_project.jpg";
 import meet from "./img/MeetCreator.jpg";
 import school from "./img/class_management.jpg";
 import unsplash from "./img/unsplash.jpg";
+import pokedex from "./img/pokedex.jpg";
 
 export const links = [
   {
@@ -146,5 +147,12 @@ export const projects = [
       "Simple Unsplash API app to search for images of delicacies and whet my appetite. Credits to: John Smilga :)  ",
     img: unsplash,
     url: "https://unsplash-img-search.netlify.app/",
+  },
+  {
+    id: 5,
+    name: "Homemade Pokedex",
+    description: "Gotta code 'em all!",
+    img: pokedex,
+    url: "https://homemade-pokedex.netlify.app/",
   },
 ];

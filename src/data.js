@@ -17,6 +17,7 @@ import meet from "./img/MeetCreator.jpg";
 import school from "./img/class_management.jpg";
 import unsplash from "./img/unsplash.jpg";
 import pokedex from "./img/pokedex.jpg";
+import jobsAPI from "./img/jobsAPI.jpg";
 
 export const links = [
   {
@@ -154,5 +155,12 @@ export const projects = [
     description: "Gotta code 'em all!",
     img: pokedex,
     url: "https://homemade-pokedex.netlify.app/",
+  },
+  {
+    id: 6,
+    name: "Jobs API",
+    description: "First Back-end experiment",
+    img: jobsAPI,
+    url: "https://temp-jobs-api-w1nb.onrender.com",
   },
 ];

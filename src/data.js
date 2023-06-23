@@ -9,8 +9,9 @@ import {
   FaReact,
   FaInstagram,
   FaGithub,
+  FaNode,
 } from "react-icons/fa";
-import { SiJavascript, SiTypescript } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiMongodb } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 import cookie from "./img/cookie_project.jpg";
 import meet from "./img/MeetCreator.jpg";
@@ -91,6 +92,16 @@ export const skills = [
     id: 6,
     name: "Github",
     icon: <AiFillGithub size={50} />,
+  },
+  {
+    id: 7,
+    name: "Node.js",
+    icon: <FaNode size={50} />,
+  },
+  {
+    id: 8,
+    name: "Mongodb",
+    icon: <SiMongodb size={50} />,
   },
 ];
 

@@ -159,16 +159,16 @@ export const projects = [
   },
   {
     id: 6,
-    name: "Jobs API",
-    description: "First Back-end experiment",
-    img: jobsAPI,
-    url: "https://temp-jobs-api-w1nb.onrender.com",
-  },
-  {
-    id: 7,
     name: "JobsApp",
     description: "My first Full-stack integration, based on the Jobs API.",
     img: jobsApp,
     url: "https://jobsapp-tut.onrender.com/landing",
+  },
+  {
+    id: 7,
+    name: "Jobs API",
+    description: "First Back-end experiment",
+    img: jobsAPI,
+    url: "https://temp-jobs-api-w1nb.onrender.com",
   },
 ];

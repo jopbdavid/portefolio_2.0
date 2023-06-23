@@ -18,6 +18,7 @@ import school from "./img/class_management.jpg";
 import unsplash from "./img/unsplash.jpg";
 import pokedex from "./img/pokedex.jpg";
 import jobsAPI from "./img/jobsAPI.jpg";
+import jobsApp from "./img/jobsApp.jpg";
 
 export const links = [
   {
@@ -162,5 +163,12 @@ export const projects = [
     description: "First Back-end experiment",
     img: jobsAPI,
     url: "https://temp-jobs-api-w1nb.onrender.com",
+  },
+  {
+    id: 7,
+    name: "JobsApp",
+    description: "My first Full-stack integration, based on the Jobs API.",
+    img: jobsApp,
+    url: "https://jobsapp-tut.onrender.com/landing",
   },
 ];

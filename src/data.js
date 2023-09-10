@@ -20,6 +20,7 @@ import unsplash from "./img/unsplash.jpg";
 import pokedex from "./img/pokedex.jpg";
 import jobsAPI from "./img/jobsAPI.jpg";
 import jobsApp from "./img/jobsApp.jpg";
+import store from "./img/rippednerdstore.jpeg";
 
 export const links = [
   {
@@ -131,6 +132,14 @@ export const experience = [
 
 export const projects = [
   {
+    id: 8,
+    name: "TheRippedNerd Store",
+    description:
+      "The RippedNerd is a personal project about my healthy lifestyle endeavour. Check our nerdy and nutricious merchandise!",
+    img: store,
+    url: "https://therippednerdstore.netlify.app/",
+  },
+  {
     id: 1,
     name: "Cookie Dilemma",
     description: "Yeah, i've a cookie problem",
@@ -147,9 +156,9 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Class Management",
+    name: "The STORA-APP - Class Management2.0 ",
     description:
-      "My attempt to save a dear family member from the excruciating pain of managing those little devils at school",
+      "Full Stack project - My attempt to save a dear family member from the excruciating pain of managing those little devils at school",
     img: school,
     url: "http://class-management-jp.netlify.app",
   },

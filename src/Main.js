@@ -1,20 +1,17 @@
 import React from "react";
-import logo from "./img/DSC_0409.jpg";
+
 import { links, social, skills } from "./data";
 import { Link } from "react-router-dom";
 import hand from "./img/Emoji_u1f44b.svg";
+import Github from "./components/Github";
+import Skills from "./components/Skills";
+import Picture from "./components/Picture";
 
 const Main = () => {
   return (
     <section className="section main">
-      <div className="title-logo">
-        <div className="img-container">
-          <img src={logo} alt="" className="person-img" />
-        </div>
-        <div className="underline"></div>
-      </div>
+      <Picture />
       <div className="skills-center">
-        {/* <div className="skills-btn-container"></div> */}
         <div className="intro">
           <h2>
             Hey! I'm João.
@@ -28,23 +25,9 @@ const Main = () => {
             know me.
           </p>
         </div>
+        <Skills />
 
-        <article className="skill-info">
-          <h3>SKILLS</h3>
-          <aside className="skills">
-            {skills.map((skill) => {
-              const { id, name, icon } = skill;
-              return <li key={id}>{icon}</li>;
-            })}
-          </aside>
-
-          <p className="skill-date">{}</p>
-          <h3>
-            <div className="skill-desc">
-              <p>{}</p>
-            </div>
-          </h3>
-        </article>
+        <Github />
       </div>
     </section>
   );

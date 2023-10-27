@@ -11,16 +11,28 @@ import {
   FaGithub,
   FaNode,
 } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiMongodb } from "react-icons/si";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiMongodb,
+  SiTailwindcss,
+  SiAirtable,
+  SiExpress,
+  SiStyledcomponents,
+  SiRedux,
+  SiRender,
+  SiNetlify,
+} from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 import cookie from "./img/cookie_project.jpg";
 import meet from "./img/MeetCreator.jpg";
 import school from "./img/class_management.jpg";
 import unsplash from "./img/unsplash.jpg";
 import pokedex from "./img/pokedex.jpg";
-import jobsAPI from "./img/jobsAPI.jpg";
+import stora from "./img/stora.jpg";
 import jobsApp from "./img/jobsApp.jpg";
-import store from "./img/rippednerdstore.jpeg";
+import store from "./img/rippednerdstore2.jpg";
+import vicePiggy from "./img/vicepiggy.png";
 
 export const links = [
   {
@@ -104,6 +116,16 @@ export const skills = [
     name: "Mongodb",
     icon: <SiMongodb size={50} />,
   },
+  {
+    id: 9,
+    name: "TailWindCSS",
+    icon: <SiTailwindcss size={50} />,
+  },
+  {
+    id: 10,
+    name: "Airtable",
+    icon: <SiAirtable size={50} />,
+  },
 ];
 
 export const experience = [
@@ -132,63 +154,103 @@ export const experience = [
 
 export const projects = [
   {
-    id: 8,
+    id: 9,
+    name: "VicePiggyBank",
+    description:
+      "We're all creatures of habits and vices, this fun project was made to track these small expenses and help me control them!",
+    img: vicePiggy,
+    url: "https://vicepiggybank.netlify.app",
+    skills: [
+      <SiJavascript />,
+      <FaReact />,
+      <SiTailwindcss />,
+      <SiAirtable />,
+      <SiNetlify />,
+    ],
+  },
+  {
+    id: 4,
+    name: "The STORA-APP - Class Management2.0 ",
+    description:
+      "Full Stack project - My attempt to save a dear family member from the excruciating pain of managing those little devils at school",
+    img: stora,
+    url: "https://stora-app.netlify.app/landing",
+    skills: [
+      <SiJavascript />,
+      <FaReact />,
+      <FaNode />,
+      <SiExpress />,
+      <SiMongodb />,
+      <SiStyledcomponents />,
+      <SiRedux />,
+      <SiRender />,
+      <SiNetlify />,
+    ],
+  },
+  {
+    id: 1,
     name: "TheRippedNerd Store",
     description:
       "The RippedNerd is a personal project about my healthy lifestyle endeavour. Check our nerdy and nutricious merchandise!",
     img: store,
     url: "https://therippednerdstore.netlify.app/",
+    skills: [
+      <SiJavascript />,
+      <FaReact />,
+      <SiTailwindcss />,
+      <SiAirtable />,
+      <SiNetlify />,
+    ],
   },
   {
-    id: 1,
+    id: 2,
     name: "Cookie Dilemma",
     description: "Yeah, i've a cookie problem",
     img: cookie,
     url: "https://cookiedilema.netlify.app",
+    skills: [<SiJavascript />],
   },
   {
-    id: 2,
+    id: 3,
     name: "Meet The Creator",
     description:
       "My personal playlist creator experiment, to get my workout juices flowing. Based on the codecademy project.",
     img: meet,
     url: "https://meet-creator.netlify.app",
+    skills: [<SiJavascript />, <FaReact />],
   },
+
   {
-    id: 3,
-    name: "The STORA-APP - Class Management2.0 ",
-    description:
-      "Full Stack project - My attempt to save a dear family member from the excruciating pain of managing those little devils at school",
-    img: school,
-    url: "http://class-management-jp.netlify.app",
-  },
-  {
-    id: 4,
+    id: 5,
     name: "Unsplash search",
     description:
       "Simple Unsplash API app to search for images of delicacies and whet my appetite. Credits to: John Smilga :)  ",
     img: unsplash,
     url: "https://unsplash-img-search.netlify.app/",
+    skills: [<SiJavascript />, <FaReact />],
   },
   {
-    id: 5,
+    id: 6,
     name: "Homemade Pokedex",
     description: "Gotta code 'em all!",
     img: pokedex,
     url: "https://homemade-pokedex.netlify.app/",
+    skills: [<SiJavascript />, <FaReact />],
   },
   {
-    id: 6,
+    id: 7,
     name: "JobsApp",
     description: "My first Full-stack integration, based on the Jobs API.",
     img: jobsApp,
     url: "https://jobsapp-tut.onrender.com/landing",
-  },
-  {
-    id: 7,
-    name: "Jobs API",
-    description: "First Back-end experiment",
-    img: jobsAPI,
-    url: "https://temp-jobs-api-w1nb.onrender.com",
+    skills: [
+      <SiJavascript />,
+      <FaReact />,
+      <FaNode />,
+      <SiExpress />,
+      <SiMongodb />,
+      <SiStyledcomponents />,
+      <SiRender />,
+    ],
   },
 ];

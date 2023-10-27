@@ -25,9 +25,6 @@ const ProjectCard = (project) => {
       <div className={`project-details ${showDetails ? "show" : null}`}>
         <h3>{name}</h3>
         <p>{description}</p>
-        <button className="btn">
-          <a href={url}>View project</a>
-        </button>
       </div>
     </div>
   );

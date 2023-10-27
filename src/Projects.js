@@ -2,6 +2,8 @@ import React from "react";
 import { projects } from "./data";
 import ProjectCard from "./ProjectCard";
 
+import ProjectCarousel from "./components/ProjectCarousel";
+
 const Projects = () => {
   return (
     <div className="project-section">
@@ -10,9 +12,15 @@ const Projects = () => {
       <div className="underline"></div>
       <div className="project-container">
         {projects.map((project) => {
-          return <ProjectCard {...project} />;
+          return <ProjectCarousel {...project} />;
         })}
       </div>
+
+      {/* <div className="project-container">
+        {projects.map((project) => {
+          return <ProjectCard {...project} />;
+        })}
+      </div> */}
     </div>
   );
 };

@@ -569,13 +569,13 @@ Projects
 
 .project-section {
   margin-top: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 5rem;
+  margin-right: 5%;
 }
 @media screen and (max-width: 992px) {
   .project-section {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 
@@ -598,12 +598,12 @@ Projects
 }
 
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
   margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .project-img {
@@ -632,7 +632,7 @@ Projects
   flex-direction: column;
   justify-content: center;
 
-  background-color: var(--clr-grey-9);
+  background-color: var(--clr-grey-10);
 
   text-align: left;
   border-radius: var(--radius);
@@ -640,23 +640,25 @@ Projects
 }
 
 .show {
-  opacity: 1;
+  opacity: 0.7;
 }
 .project:hover .project-details {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .project-details h3 {
   margin-left: 2rem;
   font-style: italic;
-  color: var(--clr-primary-3);
+  color: var(--clr-primary-1);
+  font-weight: 900;
 }
 
 .project-details p {
   margin-top: 2rem;
   margin-left: 2rem;
   font-size: 1rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-1);
+  font-weight: 700;
 }
 
 .project-details button {

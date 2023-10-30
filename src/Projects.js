@@ -15,12 +15,6 @@ const Projects = () => {
           return <ProjectCarousel {...project} />;
         })}
       </div>
-
-      {/* <div className="project-container">
-        {projects.map((project) => {
-          return <ProjectCard {...project} />;
-        })}
-      </div> */}
     </div>
   );
 };

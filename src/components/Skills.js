@@ -44,7 +44,7 @@ const Wrapper = styled.section`
     background: var(--clr-primary-5);
     border: 1.5px solid;
     display: flex;
-    width: 45rem;
+    width: 90%;
     padding-top: 0.5rem;
     justify-content: space-evenly;
   }

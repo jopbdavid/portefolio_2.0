@@ -6,31 +6,56 @@ import hand from "./img/Emoji_u1f44b.svg";
 import Github from "./components/Github";
 import Skills from "./components/Skills";
 import Picture from "./components/Picture";
+import styled from "styled-components";
 
 const Main = () => {
   return (
-    <section className="section main">
+    <Wrapper>
       <Picture />
-      <div className="skills-center">
+      <div className="w-full">
         <div className="intro">
           <h2>
             Hey! I'm João.
-            <span className="waving-hand">
-              <img src={hand} />
+            <span className="waving-hand inline-block">
+              <img src={hand} className="ml-6" alt="waving hand" />
             </span>
           </h2>
-          <p>
-            I am a fresh off the boat front-end developer. Eager to get myself
-            working! Check my <Link to="/About">about</Link> page and get to
-            know me.
+          <p className="ml-12 font-semibold">
+            Self-taught Full-Stack Developer.{" "}
+          </p>
+          <p className="ml-20">
+            Relentless curiosity for technology and a commitment to lifelong
+            learning. I've honed my skills and expertise through self-directed
+            study and hands-on experience! Check my{" "}
+            <Link to="/About" className="font-bold hover:underline">
+              about
+            </Link>{" "}
+            page and get to know me.
           </p>
         </div>
         <Skills />
 
         <Github />
       </div>
-    </section>
+    </Wrapper>
   );
 };
 
 export default Main;
+
+const Wrapper = styled.section`
+  .intro {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: left;
+    font-style: italic;
+    width: 60%;
+    margin-left: 2rem;
+
+    padding-bottom: 1rem;
+  }
+  .waving-hand img {
+    width: 35px;
+    height: 35px;
+  }
+`;

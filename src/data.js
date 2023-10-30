@@ -116,16 +116,16 @@ export const skills = [
     name: "Mongodb",
     icon: <SiMongodb size={50} />,
   },
-  {
-    id: 9,
-    name: "TailWindCSS",
-    icon: <SiTailwindcss size={50} />,
-  },
-  {
-    id: 10,
-    name: "Airtable",
-    icon: <SiAirtable size={50} />,
-  },
+  // {
+  //   id: 9,
+  //   name: "TailWindCSS",
+  //   icon: <SiTailwindcss size={50} />,
+  // },
+  // {
+  //   id: 10,
+  //   name: "Airtable",
+  //   icon: <SiAirtable size={50} />,
+  // },
 ];
 
 export const experience = [

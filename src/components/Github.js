@@ -7,33 +7,30 @@ import { DiGithubBadge } from "react-icons/di";
 const Github = () => {
   return (
     <Wrapper>
-      <div className="section-center">
-        <div
-          className="hero h-full w-full"
-          style={{
-            backgroundImage: `url(/github.jpg)`,
-            backgroundSize: "50%",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="w-full">
-              <h3>
-                <DiGithubFull size={80} style={{ display: "inline" }} />
-                <DiGithubBadge size={80} style={{ display: "inline" }} />
-              </h3>
+      <div
+        className="hero"
+        style={{
+          backgroundImage: `url(/github.jpg)`,
+          backgroundSize: "60%",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="w-full]">
+            <h3>
+              <DiGithubFull size={80} style={{ display: "inline" }} />
+              <DiGithubBadge size={80} style={{ display: "inline" }} />
+            </h3>
 
-              <p>
-                Feel free to explore my repositories, fork projects, or get in
-                touch if you'd like to collaborate on any exciting projects. I'm
-                always eager to learn and contribute to the development
-                community.
-              </p>
-              <button className="btn btn-primary">
-                <a href="https://github.com/jopbdavid">Gheck Me Out!</a>
-              </button>
-            </div>
+            <p>
+              Feel free to explore my repositories, fork projects, or get in
+              touch if you'd like to collaborate on any exciting projects. I'm
+              always eager to learn and contribute to the development community.
+            </p>
+            <button className="btn btn-primary">
+              <a href="https://github.com/jopbdavid">Gheck Me Out!</a>
+            </button>
           </div>
         </div>
       </div>
@@ -49,8 +46,9 @@ const Wrapper = styled.section`
   padding: 5 rem 0;
   margin-bottom: 5rem;
   background: var(--clr-primary-9);
-  margin-left: -10rem;
-  margin-right: -8rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 
   p {
     font-size: 1.25rem;

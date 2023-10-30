@@ -28,7 +28,7 @@ const Footer = () => {
 };
 
 const Foot = styled.footer`
-  height: 5rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

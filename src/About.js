@@ -12,6 +12,8 @@ import styled from "styled-components";
 import certOne from "./img/codecademyCerti.png";
 import certTwo from "./img/PSMI.png";
 import certThree from "./img/udemyNodeJS.png";
+import certFour from "./img/webDevBootcamp.png";
+import certFive from "./img/fullStackEng.png";
 
 const About = () => {
   const [jobs, setJobs] = useState(experience);
@@ -118,8 +120,8 @@ const About = () => {
                 </p>
                 <p className="flex flex-row">
                   <FaAngleDoubleRight size={15} className=" mr-2 mt-1" />
-                  Constantly learning, experimenting, and expanding my skill
-                  set to deliver cutting-edge solutions.
+                  Constantly learning, experimenting, and expanding my skill set
+                  to deliver cutting-edge solutions.
                 </p>
               </div>
             </div>
@@ -132,16 +134,34 @@ const About = () => {
             <h3>&lt; Education | Certification &gt;</h3>
           </div>
 
-          <div className="education-top">
+          <div className="education-top ">
             <h3 className="pt-6">Full-Stack Engineer</h3>
             <h4>Scrum Master Org | Codecademy | Udemy</h4>
-            <div className="flex flex-row w-1/4 justify-center align-middle mx-auto">
-              <img src={certOne} className="px-2 hover:scale-150" alt="cert" />
-              <img src={certTwo} className="px-2 hover:scale-150" alt="cert" />
+            <div className="flex flex-row w-1/5 justify-center align-middle mx-auto">
+              <img
+                src={certOne}
+                className="px-2 hover:scale-150"
+                alt="certFE"
+              />
+              <img
+                src={certFive}
+                className="px-2 hover:scale-150"
+                alt="certFS"
+              />
+              <img
+                src={certTwo}
+                className="px-2 hover:scale-150"
+                alt="certPSM"
+              />
+              <img
+                src={certFour}
+                className="px-2 hover:scale-150"
+                alt="certWebDev"
+              />
               <img
                 src={certThree}
                 className="px-2 hover:scale-150"
-                alt="cert"
+                alt="certNode"
               />
             </div>
           </div>

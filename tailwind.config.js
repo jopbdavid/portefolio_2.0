@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        headingNow: ["headingNow"],
+        aperture2: ["aperture2"],
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

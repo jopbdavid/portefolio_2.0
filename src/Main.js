@@ -2,11 +2,13 @@ import React from "react";
 
 import { links, social, skills } from "./data";
 import { Link } from "react-router-dom";
+
 import hand from "./img/Emoji_u1f44b.svg";
 import Github from "./components/Github";
 import Skills from "./components/Skills";
 import Picture from "./components/Picture";
 import styled from "styled-components";
+import Cv from "./components/Cv";
 
 const Main = () => {
   return (
@@ -20,7 +22,7 @@ const Main = () => {
               <img src={hand} className="ml-6" alt="waving hand" />
             </span>
           </h2>
-          <p className="ml-12 font-semibold">
+          <p className="ml-12 font-semibold font-aperture2">
             Self-taught Full-Stack Developer.{" "}
           </p>
           <p className="ml-20">
@@ -34,7 +36,7 @@ const Main = () => {
           </p>
         </div>
         <Skills />
-
+        <Cv />
         <Github />
       </div>
     </Wrapper>

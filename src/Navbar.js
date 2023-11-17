@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import logo from "./img/jd_logo.png";
 
 import { links, social } from "./data";
 
@@ -23,11 +24,11 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <div className="icon">
-            <img src="jd.png" alt="icon" />
+            <img src={logo} alt="icon" />
           </div>
           <h1 className="nav-name">
             <Link to="/">
-              <a>
+              <a style={{ fontFamily: "headingNow" }}>
                 <span className="first-l">J</span>OÃO
                 <span className="first-l">D</span>AVID
               </a>

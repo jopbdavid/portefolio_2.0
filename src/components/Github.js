@@ -17,10 +17,16 @@ const Github = () => {
       >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="w-full]">
+          <div className="w-full">
             <h3>
-              <DiGithubFull size={80} style={{ display: "inline" }} />
-              <DiGithubBadge size={80} style={{ display: "inline" }} />
+              <DiGithubFull
+                size={80}
+                style={{ display: "inline", color: "#ffbd46" }}
+              />
+              <DiGithubBadge
+                size={80}
+                style={{ display: "inline", color: "#ffbd46" }}
+              />
             </h3>
 
             <p>
@@ -28,7 +34,7 @@ const Github = () => {
               touch if you'd like to collaborate on any exciting projects. I'm
               always eager to learn and contribute to the development community.
             </p>
-            <button className="btn btn-primary">
+            <button className="btn">
               <a href="https://github.com/jopbdavid">Gheck Me Out!</a>
             </button>
           </div>
@@ -45,7 +51,7 @@ const Wrapper = styled.section`
   }
   padding: 5 rem 0;
   margin-bottom: 5rem;
-  background: var(--clr-primary-9);
+  background: #ffbd46;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
@@ -54,7 +60,7 @@ const Wrapper = styled.section`
     font-size: 1.25rem;
     margin-bottom: 0;
     line-height: 1.8;
-    color: var(--clr-primary-9);
+    color: var(--clr-grey-10);
   }
   .services-center {
     margin-top: 4rem;
@@ -67,7 +73,7 @@ const Wrapper = styled.section`
     padding: 2.5rem 2rem;
     border-radius: var(--radius);
     p {
-      color: var(--clr-primary-2);
+      color: #ffbd46;
     }
   }
   span {
@@ -78,7 +84,7 @@ const Wrapper = styled.section`
     place-items: center;
     margin-bottom: 1rem;
     border-radius: 50%;
-    background: var(--clr-primary-10);
+    background: #ffbd46;
     color: var(--clr-primary-1);
     svg {
       font-size: 2rem;
@@ -86,7 +92,7 @@ const Wrapper = styled.section`
   }
 
   .git {
-    /* background-color: var(--clr-white); */
+    background-color: #ffbd46;
     color: var(--clr-primary-1);
   }
 

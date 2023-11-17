@@ -9,7 +9,7 @@ const Footer = () => {
       {/* <div className="footer"> */}
       <h4>
         Let's Connect!
-        <span> . </span>
+        <span style={{ color: "#ffbd46" }}> . </span>
       </h4>
 
       <ul className="social-icons">
@@ -62,11 +62,11 @@ const Foot = styled.footer`
   .social-icons a {
     margin: 5rem;
 
-    color: var(--clr-primary-5);
+    color: #ffbd56;
     transition: var(--transition);
   }
   .social-icons a:hover {
-    color: var(--clr-primary-9);
+    color: var(--clr-grey-9);
   }
 `;
 export default Footer;

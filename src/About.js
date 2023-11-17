@@ -335,12 +335,12 @@ const Wrapper = styled.section`
     outline-color: var(--clr-primary-10);
   }
   .job-btn:hover {
-    color: var(--clr-primary-5);
-    box-shadow: 0 2px var(--clr-primary-5);
+    color: #ffbd46;
+    box-shadow: 0 2px #ffbd46;
   }
   .active-btn {
-    color: var(--clr-primary-5);
-    box-shadow: 0 2px var(--clr-primary-5);
+    color: #ffbd46;
+    box-shadow: 0 2px #ffbd46;
   }
 
   .job-info h3 {
@@ -371,7 +371,7 @@ const Wrapper = styled.section`
     width: 450px;
   }
   .job-icon {
-    color: var(--clr-primary-5);
+    color: #ffbd46;
   }
   @media screen and (min-width: 992px) {
     .jobs-center {
@@ -388,10 +388,10 @@ const Wrapper = styled.section`
       margin-bottom: 1rem;
     }
     .active-btn {
-      box-shadow: -2px 0 var(--clr-primary-5);
+      box-shadow: -2px 0 #ffbd46;
     }
     .job-btn:hover {
-      box-shadow: -2px 0 var(--clr-primary-5);
+      box-shadow: -2px 0 #ffbd46;
     }
   }
 `;

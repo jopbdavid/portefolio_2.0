@@ -41,7 +41,8 @@ const Wrapper = styled.section`
   }
   .skills {
     border-radius: var(--radius);
-    background: var(--clr-primary-5);
+
+    background: #ffbd46;
     border: 1.5px solid;
     display: flex;
     width: 90%;

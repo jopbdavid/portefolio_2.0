@@ -121,10 +121,10 @@ const Wrapper = styled.section`
     opacity: 0.9;
   }
 
-  .project-details h3 {
+  .project-details h2 {
     margin-left: 2rem;
     font-style: italic;
-    color: var(--clr-primary-1);
+    color: #ffbd46;
     font-weight: 900;
   }
 

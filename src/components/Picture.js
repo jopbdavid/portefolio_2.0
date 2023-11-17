@@ -22,7 +22,7 @@ const Wrapper = styled.section`
     width: 15rem;
     height: 0.25rem;
     margin-left: 2rem;
-    background: var(--clr-primary-5);
+    background: #ffbd46;
   }
 
   .person-img {
@@ -37,7 +37,7 @@ const Wrapper = styled.section`
     content: "";
     width: 100%;
     height: 100%;
-    background: var(--clr-primary-5);
+    background: #ffbd46;
     position: absolute;
     top: -0.25rem;
     right: -0.5rem;

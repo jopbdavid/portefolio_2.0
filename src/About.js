@@ -129,7 +129,7 @@ const About = () => {
         </div>
         {/* </div> */}
 
-        <div className="w-[100%]">
+        <div className="w-[100%] edu">
           <div className="experience">
             <h3>&lt; Education | Certification &gt;</h3>
           </div>
@@ -165,7 +165,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="flex flex-row gap-x-10 ">
+          <div className="flex flex-row gap-x-10 edu">
             <div className="education-one">
               <h3>Biochemistry</h3>
               <h4>First academic endeavor was in the field of science</h4>
@@ -226,8 +226,8 @@ const Wrapper = styled.section`
   }
   @media screen and (max-width: 992px) {
     .about {
-      margin-left: 3rem;
-      margin-right: 3rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
   }
 
@@ -296,11 +296,9 @@ const Wrapper = styled.section`
   }
 
   .experience {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     margin-left: 0;
     margin-right: 0;
-  }
-  @media screen and (max-width: 992px) {
   }
 
   .experience h3 {
@@ -392,6 +390,34 @@ const Wrapper = styled.section`
     }
     .job-btn:hover {
       box-shadow: -2px 0 #ffbd46;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .edu {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .experience {
+      padding-bottom: 0;
+    }
+    .education-one {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .job-btn {
+      margin: 0.5rem 0;
+    }
+    .btn-container {
+      margin: 0.5rem;
+    }
+    .title-experience {
+      margin-bottom: 1rem;
+    }
+    .job-desc p {
+      width: 90%;
     }
   }
 `;

@@ -13,95 +13,73 @@ const Skills = () => {
             return <li key={id}>{icon}</li>;
           })}
         </aside>
-
-        <p className="skill-date">{}</p>
-        <h3>
-          <div className="skill-desc">
-            <p>{}</p>
-          </div>
-        </h3>
       </article>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.section`
-  margin-left: 35%;
-  .skills-center {
-    width: 80vw;
-    margin-top: 2rem;
-    max-width: var(--max-width);
-  }
-  .skills-btn-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 4rem;
-    flex-wrap: wrap;
-  }
-  .skills {
-    border-radius: var(--radius);
+  // Adjusting for mobile first
+  margin: 0;
+  padding: 1rem;
 
-    background: #ffbd46;
-    border: 1.5px solid;
+  .skill-info .skills {
     display: flex;
-    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly; // Center items for smaller screens
     padding-top: 0.5rem;
-    justify-content: space-evenly;
+    background: #ffbd46; // Ensure background color is applied
+    border-radius: var(--radius);
+    border: 1.5px solid;
+    width: 100%; // Adjust width as needed
   }
 
   .skills li {
     list-style-type: none;
-  }
-
-  .skill-info {
-    margin-left: 8rem;
+    margin: 0.5rem; // Add some space around each skill
   }
 
   .skill-info h3 {
-    font-weight: 300;
-    margin-left: 20rem;
-    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+    text-align: center; // Center heading for mobile
+    font-size: 1.2rem; // Smaller font size for mobile
   }
 
-  .skill-date {
-    letter-spacing: var(--spacing);
-  }
-  .skill-desc {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 2rem;
-    align-items: center;
-    margin-bottom: 1.25rem;
-  }
-  .skill-desc p {
-    margin-bottom: 0;
-    color: var(--clr-grey-3);
-  }
   .skill-icon {
     color: var(--clr-primary-5);
   }
-  @media (min-width: 992px) {
-    .skill-center {
-      width: 90vw;
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      column-gap: 4rem;
+
+  // Media queries for larger screens
+  @media (min-width: 576px) {
+    .skill-info {
+      margin-left: 2rem;
     }
-    .skill-btn-container {
-      flex-direction: column;
-      justify-content: flex-start;
+    .skill-info h3 {
+      text-align: left;
+      margin-left: 1rem;
+      font-size: 1.5rem; // Adjust font size for larger screens
+    }
+    .skills {
+      width: 90%;
+      justify-content: flex-start; // Align items to start for larger screens
     }
   }
-  @media (min-width: 576px) {
-    .services-center {
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  @media (min-width: 992px) {
+    margin-left: 15%;
+    .skill-info {
+      margin-left: 4rem;
     }
   }
   @media (min-width: 1280px) {
-    padding: 0;
-    .section-center {
-      transform: translateY(5rem);
+    margin-left: 25%;
+    .skill-info {
+      margin-left: 8rem;
+      max-width: 60%;
+    }
+    .skill-info h3 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
     }
   }
 `;

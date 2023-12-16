@@ -13,19 +13,13 @@ const ProjectCarousel = ({ id, name, description, img, url, skills }) => {
     setShowDetails(false);
   };
   return (
-    <Wrapper>
-      <div className="mockup-browser border border-base-800 my-10 w-full">
+    <Wrapper img={img} className="container">
+      <div className="mockup-browser border border-base-800 my-10 container2">
         <div className="mockup-browser-toolbar">
           <div className="input border border-base-300">{url}</div>
         </div>
         <div
-          className="flex justify-center px-4 py-16 border-t border-base-300"
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            height: "500px",
-          }}
+          className="flex justify-center px-4 py-16 border-t border-base-300 img"
           onMouseEnter={handleEnter}
           onMouseLeave={handleLeave}
         >
@@ -80,6 +74,27 @@ const Wrapper = styled.section`
     overflow: hidden;
   }
 
+  .img {
+    background-image: url(${(props) => props.img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  @media screen and (max-width: 768px) {
+    .img {
+      padding: 0;
+
+      object-fit: cover;
+      height: 150px;
+    }
+    .container {
+      width: 100% !important;
+    }
+    .container2 {
+      width: 100% !important;
+    }
+  }
+
   .project-img {
     width: 300px;
     height: 300px;
@@ -89,6 +104,11 @@ const Wrapper = styled.section`
     border-radius: var(--radius);
     image-rendering: optimizeQuality;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
   .hidden {
     opacity: 0;
@@ -112,6 +132,12 @@ const Wrapper = styled.section`
     text-align: left;
     border-radius: var(--radius);
     transition: opacity 0.5s ease-in-out;
+    @media screen and (max-width: 768px) {
+      justify-content: space-evenly;
+      width: 100%;
+      margin-left: 0;
+      height: 100%;
+    }
   }
 
   .show {
@@ -126,6 +152,11 @@ const Wrapper = styled.section`
     font-style: italic;
     color: #ffbd46;
     font-weight: 900;
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-top: 10%;
+    }
   }
 
   .project-details p {
@@ -134,6 +165,12 @@ const Wrapper = styled.section`
     font-size: 1rem;
     color: var(--clr-grey-1);
     font-weight: 700;
+    @media screen and (max-width: 768px) {
+      font-size: 0.75rem;
+      margin-left: 0;
+      font-weight: 300;
+      margin-top: 0;
+    }
   }
 
   .project-details button {
@@ -144,6 +181,14 @@ const Wrapper = styled.section`
     text-decoration: none;
 
     transition: background-color 0.5s ease;
+    @media screen and (max-width: 768px) {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 300;
+      width: 80%;
+      margin-bottom: -10%;
+      padding: 0;
+    }
   }
 
   .project-details button:hover {

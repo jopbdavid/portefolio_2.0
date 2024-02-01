@@ -22,17 +22,20 @@ import {
   SiRedux,
   SiRender,
   SiNetlify,
+  SiNextdotjs,
+  SiFirebase,
 } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 import cookie from "./img/cookie_project.jpg";
 import meet from "./img/MeetCreator.jpg";
-import school from "./img/class_management.jpg";
+import tutor from "./img/tutor.png";
 import unsplash from "./img/unsplash.jpg";
 import pokedex from "./img/pokedex.jpg";
 import stora from "./img/stora.jpg";
 import jobsApp from "./img/jobsApp.jpg";
 import store from "./img/rippednerdstore2.jpg";
 import vicePiggy from "./img/vicepiggy.png";
+import Palpite from "./img/palpite.png";
 
 export const links = [
   {
@@ -153,6 +156,30 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    id: 10,
+    name: "Tutor Page",
+    description: "Landing Page created for my tutoring service",
+    img: tutor,
+    url: "https://elearning-app-three.vercel.app/",
+    skills: [<SiJavascript />, <FaReact />, <SiTailwindcss />, <SiNextdotjs />],
+  },
+  {
+    id: 11,
+    name: "Palpite Completo",
+    description:
+      "Landing Page created for a local business, implementing other features on the go",
+    img: Palpite,
+    url: "https://palpitecompleto-6v0fumhj4-jpdavids-projects.vercel.app/",
+    skills: [
+      <SiJavascript />,
+      <FaReact />,
+      <SiFirebase />,
+
+      <SiTailwindcss />,
+      <SiNextdotjs />,
+    ],
+  },
   {
     id: 9,
     name: "VicePiggyBank",

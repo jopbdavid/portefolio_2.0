@@ -68,7 +68,7 @@ export const social = [
   },
   {
     id: 3,
-    url: "https://www.linkedin.com/in/jo%C3%A3o-david-888391144/",
+    url: "https://www.linkedin.com/in/joao-david-888391144/",
     icon: <FaLinkedin size={30} />,
   },
   {
@@ -161,7 +161,7 @@ export const projects = [
     name: "Tutor Page",
     description: "Landing Page created for my tutoring service",
     img: tutor,
-    url: "https://elearning-app-three.vercel.app/",
+    url: "https://jdtutor.vercel.app/",
     skills: [<SiJavascript />, <FaReact />, <SiTailwindcss />, <SiNextdotjs />],
   },
   {

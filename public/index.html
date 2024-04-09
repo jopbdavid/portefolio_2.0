@@ -45,13 +45,13 @@
     const contentHeight = document.documentElement.scrollHeight;
     console.log(contentHeight);
     // window.parent.postMessage({ frameHeight: contentHeight }, "*");
-    useEffect(() => {
-      const sendHeight = () => {
-        const height = document.documentElement.scrollHeight;
-        console.log(height);
-        window.parent.postMessage({ frameHeight: height }, "*"); // Adjust as needed
-      };
-      sendHeight();
-    }, [height]);
+
+    const sendHeight = () => {
+      const height = document.documentElement.scrollHeight;
+      console.log(height);
+      window.parent.postMessage({ frameHeight: height }, "*");
+    };
+
+    sendHeight();
   </script>
 </html>

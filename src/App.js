@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     const sendHeight = () => {
       const height = document.documentElement.scrollHeight;
+      console.log(height);
       window.parent.postMessage({ frameHeight: height }, "*"); // Adjust as needed
     };
     sendHeight();

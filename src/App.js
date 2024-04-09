@@ -8,7 +8,8 @@ import Footer from "./Footer";
 import About from "./About";
 
 function App() {
-  // const contentHeight = document.documentElement.scrollHeight;
+  const contentHeight = document.documentElement.scrollHeight;
+  console.log(contentHeight);
   // window.parent.postMessage({ frameHeight: contentHeight }, "*");
   useEffect(() => {
     const sendHeight = () => {

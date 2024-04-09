@@ -8,13 +8,14 @@ import Footer from "./Footer";
 import About from "./About";
 
 function App() {
-  const [height, setHeight] = useState(0);
+  // const contentHeight = document.documentElement.scrollHeight;
+  // window.parent.postMessage({ frameHeight: contentHeight }, "*");
   useEffect(() => {
-    const postHeight = () => {
-      const bodyHeight = document.documentElement.scrollHeight;
-      window.parent.postMessage({ frameHeight: bodyHeight }, "*");
+    const sendHeight = () => {
+      const height = document.documentElement.scrollHeight;
+      window.parent.postMessage({ frameHeight: height }, "*"); // Adjust as needed
     };
-    postHeight();
+    sendHeight();
   }, [height]);
 
   return (

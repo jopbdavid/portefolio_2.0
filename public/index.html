@@ -41,15 +41,4 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script>
-    window.onload = function () {
-      var bodyHeight = document.body.scrollHeight;
-      window.parent.postMessage(
-        {
-          frameHeight: bodyHeight,
-        },
-        "*"
-      ); // Consider specifying the parent domain instead of '*' for security
-    };
-  </script>
 </html>

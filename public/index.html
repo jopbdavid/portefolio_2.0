@@ -45,13 +45,5 @@
     const contentHeight = document.documentElement.scrollHeight;
     console.log(contentHeight);
     // window.parent.postMessage({ frameHeight: contentHeight }, "*");
-
-    const sendHeight = () => {
-      const height = document.documentElement.scrollHeight;
-      console.log(height);
-      window.parent.postMessage({ frameHeight: height }, "*");
-    };
-
-    sendHeight();
   </script>
 </html>

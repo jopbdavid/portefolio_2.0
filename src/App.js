@@ -5,8 +5,18 @@ import "./index.css";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import About from "./About";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const sendHeight = () => {
+      const height = document.documentElement.scrollHeight;
+      console.log(height);
+      window.parent.postMessage({ frameHeight: height }, "*");
+    };
+
+    sendHeight();
+  }, []);
   return (
     <>
       <Router>

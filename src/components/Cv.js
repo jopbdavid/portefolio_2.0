@@ -6,8 +6,8 @@ const Cv = () => {
     <>
       <div className="mb-20 w-full h-16 flex justify-center items-center">
         <a
-          href="./assets/FullStackJB_CV_2023.pdf"
-          download="jb_cv_2023.pdf"
+          href="./assets/CV-JD-24.pdf"
+          download="jb_cv_2024.pdf"
           className="btn flex justify-center items-center"
         >
           Download My CV

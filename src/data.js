@@ -164,22 +164,7 @@ export const projects = [
     url: "https://jdtutor.vercel.app/",
     skills: [<SiJavascript />, <FaReact />, <SiTailwindcss />, <SiNextdotjs />],
   },
-  {
-    id: 11,
-    name: "Palpite Completo",
-    description:
-      "Landing Page created for a local business, implementing other features on the go",
-    img: Palpite,
-    url: "https://palpitecompleto-6v0fumhj4-jpdavids-projects.vercel.app/",
-    skills: [
-      <SiJavascript />,
-      <FaReact />,
-      <SiFirebase />,
 
-      <SiTailwindcss />,
-      <SiNextdotjs />,
-    ],
-  },
   {
     id: 9,
     name: "VicePiggyBank",
@@ -230,12 +215,44 @@ export const projects = [
     ],
   },
   {
+    id: 11,
+    name: "Palpite Completo",
+    description:
+      "Landing Page created for a local business, implementing other features on the go",
+    img: Palpite,
+    url: "https://palpitecompleto-6v0fumhj4-jpdavids-projects.vercel.app/",
+    skills: [
+      <SiJavascript />,
+      <FaReact />,
+      <SiFirebase />,
+
+      <SiTailwindcss />,
+      <SiNextdotjs />,
+    ],
+  },
+  {
     id: 2,
     name: "Cookie Dilemma",
     description: "Yeah, i've a cookie problem",
     img: cookie,
     url: "https://cookiedilema.netlify.app",
     skills: [<SiJavascript />],
+  },
+  {
+    id: 7,
+    name: "JobsApp",
+    description: "My first Full-stack integration, based on the Jobs API.",
+    img: jobsApp,
+    url: "https://jobsapp-tut.onrender.com/landing",
+    skills: [
+      <SiJavascript />,
+      <FaReact />,
+      <FaNode />,
+      <SiExpress />,
+      <SiMongodb />,
+      <SiStyledcomponents />,
+      <SiRender />,
+    ],
   },
   {
     id: 3,
@@ -263,21 +280,5 @@ export const projects = [
     img: pokedex,
     url: "https://homemade-pokedex.netlify.app/",
     skills: [<SiJavascript />, <FaReact />],
-  },
-  {
-    id: 7,
-    name: "JobsApp",
-    description: "My first Full-stack integration, based on the Jobs API.",
-    img: jobsApp,
-    url: "https://jobsapp-tut.onrender.com/landing",
-    skills: [
-      <SiJavascript />,
-      <FaReact />,
-      <FaNode />,
-      <SiExpress />,
-      <SiMongodb />,
-      <SiStyledcomponents />,
-      <SiRender />,
-    ],
   },
 ];
